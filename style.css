@@ -394,7 +394,7 @@ body {
 }
 
 .holidayProducts__tile::after {
-	content: "Personalize";
+	content: "Buy Now";
 	color: #fff;
 	font-size: 14px;
 	width: 90%;
