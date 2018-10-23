@@ -31,18 +31,30 @@ window.addEventListener('scroll', function() {
 }
 );
 
-backTop.addEventListener('click', function() {
-    window.scroll({
-      top: distanceToTop,
-      behavior: "smooth"
-    })
+// backTop.addEventListener('click', function() {
+//     window.scroll({
+//       top: distanceToTop,
+//       behavior: "smooth"
+//     })
+// });
+
+// click.addEventListener('click', function() {
+//     window.scroll({
+//         top: distanceToTop,
+//         behavior: "smooth"
+//       });
+// });
+
+$(backTop).click(function() {
+  $('html, body').animate({
+      scrollTop: distanceToTop
+  }, 400);
 });
 
-click.addEventListener('click', function() {
-    window.scroll({
-        top: distanceToTop,
-        behavior: "smooth"
-      });
+$(click).click(function() {
+  $('html, body').animate({
+      scrollTop: distanceToTop
+  }, 400);
 });
 
 // btn.addEventListener('click', function(e) {
