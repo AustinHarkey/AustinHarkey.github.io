@@ -45,13 +45,19 @@ click.addEventListener('click', function() {
       });
 });
 
-btn.addEventListener('click', function(e) {
-  console.log('Cliked!');
-  e.preventDefault();
-  window.scrollBy({
-    top: distanceToTop,
-    behavior: "smooth"
-  });
+// btn.addEventListener('click', function(e) {
+//   console.log('Cliked!');
+//   e.preventDefault();
+//   window.scrollBy({
+//     top: distanceToTop,
+//     behavior: "smooth"
+//   });
+// });
+
+$(btn).click(function() {
+  $('html, body').animate({
+      scrollTop: distanceToTop
+  }, 400);
 });
 
 
