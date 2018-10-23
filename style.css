@@ -492,7 +492,14 @@ body {
     max-width: 200px;
 }
 
-
+.holidayProducts__buy {
+    display: inline-block;
+    background: #69b518;
+    color: #fff;
+    padding: 10px 20px;
+    margin: 8px 0 0 0;
+    display: none;
+}
 
 #callaway {
     background: #f9f9f9;
@@ -576,7 +583,9 @@ body {
 }
 
 @media (max-width: 1100px) {
-
+    .holidayProducts__column {
+        width: 60.6666%;
+    }
 }
 
 @media (max-width: 900px) {
@@ -635,7 +644,8 @@ body {
     }
 
     .holidayProducts__save {
-        font-size: 14px;
+        font-size: 13px;
+        font-weight: 600;
     }
 
     .holidayProducts__column--wilson {
@@ -683,5 +693,9 @@ body {
 
     .shopByCat__header {
         font-size: 30px;
+    }
+
+    .holidayProducts__buy {
+        display: inline-block;
     }
 }
