@@ -48,7 +48,7 @@ click.addEventListener('click', function() {
 btn.addEventListener('click', function(e) {
   console.log('Cliked!');
   e.preventDefault();
-  window.scroll({
+  window.scrollBy({
     top: distanceToTop,
     behavior: "smooth"
   });
