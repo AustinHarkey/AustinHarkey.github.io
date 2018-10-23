@@ -1,0 +1,687 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background: #f7f7f7;
+}
+
+.backToTop {
+    width: 60px;
+    height: 60px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background: #fff;
+    z-index: 400;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    transition: all .2s ease-in-out;
+    opacity: 0;
+    flex-direction: column;
+}
+
+.backToTop:hover {
+    border: 1px solid #69b518;
+    /* -webkit-box-shadow: 0 2px 40px 0 rgba(38, 35, 85, 0.4);
+	-moz-box-shadow: 0 2px 40px 0 rgba(38, 35, 85, 0.4);
+	-ms-box-shadow: 0 2px 40px 0 rgba(38, 35, 85, 0.4);
+    box-shadow: 0 2px 40px 0 rgba(38, 35, 85, 0.4); */
+    -webkit-box-shadow: 0 2px 30px 0 rgba(38, 35, 85, 0.2);
+	-moz-box-shadow: 0 2px 30px 0 rgba(38, 35, 85, 0.2);
+	-ms-box-shadow: 0 2px 30px 0 rgba(38, 35, 85, 0.2);
+    box-shadow: 0 2px 30px 0 rgba(38, 35, 85, 0.2);
+    transform: translateY(-5px);
+}
+
+.backToTop i {
+    color: #69b518;
+    font-size: 60px;
+    margin: 0;
+    padding: 0;
+}
+
+.backToTop__text {
+    font-size: 12px;
+    margin: 0;
+    margin-top: -15px;
+    padding: 0;
+}
+
+.pzHero {
+    width: 100%;
+    height: 100vh;
+    background: #69b518;
+    position: relative;
+    opacity: 1;
+    top: 0;
+    text-align: center;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(img/golf.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.pzHero::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(66, 180, 13, 0.6);
+}
+
+.pzHero__textWrapper {
+    position: relative;
+    z-index: 30;
+    text-align: center;
+    padding: 30px;
+    margin: 0 auto;
+}
+
+.pzHero__header {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 60px;
+    margin: 0;
+    line-height: 63px;
+}
+
+.pzHero__subtext {
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+}
+
+.pzHero__btn {
+    background: #454545;
+    padding: 20px 60px;
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    margin: 0;
+    transition: all .2s ease-in-out;
+    border: 1px solid #fff;
+    margin-top: 30px;
+}
+
+.pzHero__btn:hover {
+	-webkit-box-shadow: 0 2px 40px 0 rgba(38, 35, 85, 0.2);
+	-moz-box-shadow: 0 2px 40px 0 rgba(38, 35, 85, 0.2);
+	-ms-box-shadow: 0 2px 40px 0 rgba(38, 35, 85, 0.2);
+	box-shadow: 0 2px 40px 0 rgba(38, 35, 85, 0.2);
+    -webkit-transform: translateY(-5px);
+    -moz-transform: translateY(-5px);
+    -ms-transform: translateY(-5px);
+    -o-transform: translateY(-5px);
+    transform: translateY(-5px);
+    text-decoration: none;
+    background: #fff;
+    color: #69b518;
+}
+
+.pzHero__scroll {
+    color: #fff;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.pzHero__arrow {
+    width: 120px;
+    position: absolute;
+    bottom: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    cursor: pointer;
+    animation: bounceIn 1.8s infinite;
+}
+
+.pzHero__arrow i {
+    font-size: 50px;
+    color: #fff;
+}
+
+.fill {
+    box-sizing: border-box;
+    padding: 40px;
+    width: 100%;
+    height: 2000px;
+    background: #f7f7f7;
+    position: relative;
+    z-index: 20;
+}
+
+.pzBalls__card {
+    margin-bottom: 40px;
+    border-radius: 10px;
+    background: #fff;
+    height: 400px;
+    width: 100%;
+
+}
+
+@keyframes bounceIn {
+    0% {
+      transform: scale(1), translateY(0);
+    }
+    60% {
+      transform: scale(1) translateY(14px);
+    }
+    100% {
+      transform: scale(1);
+    }
+}
+
+.container {
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* SHOP BY CAT **************/
+.shopByCat {
+    position: relative;
+    z-index: 100;
+	width: 100%;
+	background: #f7f7f7;
+	padding: 60px 0;
+	/* background-image: url('img/xmas-bg.png'); */
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 100% 10%;
+}
+
+.shopByCat__subtext {
+	font-weight: 400;
+	color: #AEAEAE;
+	padding: 0;
+	margin: 0;
+	font-size: 16px;
+}
+
+.shopByCat__header {
+	text-transform: uppercase;
+	font-size: 45px;
+	font-weight: 600;
+	padding: 10px 0;
+	margin: 0;
+	line-height: 40px;
+}
+
+.shopByCat__hr {
+	width: 100px;
+	background: #69b518;
+	height: 6px;
+	border-radius: 20px;
+    margin-bottom: 20px;
+    border: none;
+    outline: none;
+}
+
+.shopByCat__flexWrap {
+	display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+	padding: 15px 20px;
+}
+
+.shopByCat__tile {
+	background: #fff;
+	width: 23%;
+	padding: 30px 0;
+	border-radius: 5px;
+	text-decoration: none !important;
+	transition: all .3s ease-in-out;
+    border: 1px solid #E6E6E6;
+    color: #333;
+    text-decoration: none;
+    text-decoration-color: #333;
+}
+
+.shopByCat__tile:hover {
+	-webkit-box-shadow: 0 2px 40px 0 rgba(38, 35, 85, 0.2);
+	-moz-box-shadow: 0 2px 40px 0 rgba(38, 35, 85, 0.2);
+	-ms-box-shadow: 0 2px 40px 0 rgba(38, 35, 85, 0.2);
+	box-shadow: 0 2px 40px 0 rgba(38, 35, 85, 0.2);
+	-webkit-transform: translateY(-8px);
+	-moz-transform: translateY(-8px);
+	-ms-transform: translateY(-8px);
+	-o-transform: translateY(-8px);
+	transform: translateY(-8px);
+    border: 1px solid #86DE28;
+    color: #333;
+    text-decoration: none;
+    text-decoration-color: #333;
+}
+
+.shopByCat__title {
+	font-size: 18px;
+	font-weight: 500;
+	text-decoration: none !important;
+	transition: all .3s ease-in-out;
+	display: block;
+}
+
+.shopByCat__tile:hover .shopByCat__title {
+	color: #69b518;
+}
+
+.shopByCat__tile:hover .shopByCat__image {
+	transform: scale(1.1) translateY(-6px);
+}
+
+.shopByCat__image {
+    max-width: 220px !important;
+    box-sizing: border-box;
+    padding: 20px;
+    width: 100%;
+	transition: all .2s ease-in-out;
+	transform: scale(1);
+}
+
+.shopByCat__spacer {
+	margin-bottom: 78px;
+}
+
+/* Holiday Products **************/
+.holidayProducts {
+	width: 100%;
+	background: #fff;
+	padding: 40px 0;
+	/*background-image: url('img/xmas-bg.png');*/
+	background-repeat: no-repeat;
+	background-size: cover;
+    background-position: 100% 10%;
+    box-sizing: border-box;
+}
+
+.holidayProducts__subtext {
+	font-weight: 400;
+	color: #AEAEAE;
+	padding: 0;
+	margin: 0;
+	font-size: 16px;
+}
+
+.holidayProducts__header {
+	text-transform: uppercase;
+	font-size: 45px;
+	font-weight: 600;
+	padding: 10px 0;
+	margin: 0;
+	line-height: 40px;
+}
+
+.holidayProducts__hr {
+	width: 100px;
+	background: #69b518;
+	height: 6px;
+	border-radius: 20px;
+    margin-bottom: 20px;
+    outline: none;
+    border: none;
+}
+
+.holidayProducts__flexWrap {
+	display: flex;
+    padding: 0;
+    width: 100%;
+    justify-content: center;
+}
+
+.holidayProducts__tile {
+	background: #fff;
+	width: 352px;
+	padding: 30px 0;
+	text-decoration: none !important;
+	border: 1px solid #fff;
+    position: relative;
+    display: block;
+}
+
+.holidayProducts__column {
+    display: flex;
+    /* width: 50%; */
+    /* align-items: center; */
+}
+
+.holidayProducts__column--wilson {
+    display: flex;
+    width: 66.6666%;
+    /* align-items: center; */
+}
+
+.holidayProducts__column--text {
+    text-align: left;
+    box-sizing: border-box;
+    padding: 10px;
+    align-items: center;
+    display: flex;
+}
+
+.holidayProducts__tile:hover {
+	border: 1px solid #ccc;
+}
+
+.holidayProducts__image {
+	width: 70%;
+}
+
+.holidayProducts__title {
+	display: block;
+	font-size: 14px;
+	font-weight: 500;
+	line-height: 1.54;
+	letter-spacing: .6px;
+	text-align: center;
+	color: #333;
+	margin-top: 10px;
+}
+
+.holidayProducts__tile::after {
+	content: "Personalize";
+	color: #fff;
+	font-size: 14px;
+	width: 90%;
+	background: #60b518;
+	padding: 10px 0;
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	right: 0;
+	bottom: 150px;
+	position: absolute;
+	opacity: 0;
+}
+
+.holidayProducts__tile:hover::after {
+	opacity: 1;
+}
+
+.holidayProducts__now {
+	text-transform: uppercase;
+	margin: 0;
+	padding: 0;
+	font-size: 16px;
+	display: block;
+	font-weight: 700;
+	color: #333;
+}
+
+.holidayProducts__save {
+	font-size: 16px;
+	line-height: 1.57;
+	font-weight: 700;
+	text-align: center;
+	color: #69b518;
+	padding-right: 8px;
+	text-transform: uppercase;
+}
+
+.holidayProducts__shopAll {
+	font-size: 16px;
+	color: #69b518;
+	background: #fff;
+	padding: 20px 80px;
+	display: inline-block;
+	margin: 20px auto 0 auto;
+	transition: all .3s ease-in-out;
+	border: 1px solid #69b518;
+}
+
+.holidayProducts__shopAll:hover {
+	-webkit-box-shadow: 0 2px 40px 0 rgba(38, 35, 85, 0.4);
+	-moz-box-shadow: 0 2px 40px 0 rgba(38, 35, 85, 0.4);
+	-ms-box-shadow: 0 2px 40px 0 rgba(38, 35, 85, 0.4);
+	box-shadow: 0 2px 40px 0 rgba(38, 35, 85, 0.4);
+	-webkit-transform: translateY(-10px);
+	-moz-transform: translateY(-10px);
+	-ms-transform: translateY(-10px);
+	-o-transform: translateY(-10px);
+	transform: translateY(-10px);
+	text-decoration: none;
+	background: #69b518;
+	border: 1px solid #69b518;
+	color: #fff;
+}
+
+.holidayProducts__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.holidayProducts__item {
+    font-size: 14px;
+    padding: 12px;
+
+
+}
+
+.holidayProducts__item i {
+    padding-right: 10px;
+    font-size: 20px;
+}
+
+.holidayProducts__color {
+    padding: 0 5px;
+    font-weight: 700;
+}
+
+.holidayProducts__spanBold {
+    font-weight: 700;
+    padding: 0 5px;
+}
+
+.holidayProducts__logo {
+    max-width: 200px;
+}
+
+
+
+#callaway {
+    background: #f9f9f9;
+}
+
+#callaway .holidayProducts__tile {
+    background: #f9f9f9;
+    border: 1px solid #f9f9f9
+}
+
+#callaway .holidayProducts__tile:hover {
+    border: 1px solid #ccc;
+}
+
+#wilson {
+    background: #f9f9f9;
+}
+
+#wilson .holidayProducts__tile {
+    background: #f9f9f9;
+    border: 1px solid #f9f9f9
+}
+
+#wilson .holidayProducts__tile:hover {
+    border: 1px solid #ccc;
+}
+
+/* Holiday Carousel ******************/
+
+.holidayCarousel {
+	padding: 60px 0;
+	background: #f7f7f7;
+}
+
+.holidayCarousel__image {
+	width: 80%;
+}
+
+.holidayCarousel__price {
+	font-size: 18px;
+	font-size: 600;
+	margin: 0;
+	padding: 0;
+	color: #69b518;
+}
+
+.holidayCarousel__title {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.54;
+    letter-spacing: .6px;
+    text-align: center;
+    color: #333;
+    margin-top: 0;
+    text-transform: uppercase;
+}
+
+.holidayCarousel__text {
+	padding: 0 20px 20px;
+	font-size: 14px;
+	line-height: 20px;
+	color: #777;
+}
+
+.holidayCarousel__btn {
+	display: inline-block;
+	padding: 12px 60px;
+	color: #fff;
+	background: #69b518;
+}
+
+.holidayCarousel__btn:hover {
+	text-decoration: none;
+	background: #61A716;
+}
+
+
+@media (max-width: 1400px) {
+
+}
+
+@media (max-width: 1100px) {
+
+}
+
+@media (max-width: 900px) {
+    .shopByCat {
+        padding: 0;
+    }
+    .pzHero__header {
+        font-size: 40px;
+        line-height: 40px;
+    }
+
+    .pzHero__subtext {
+        font-size: 16px;
+        padding: 5px 0;
+    }
+
+    .shopByCat__flexWrap {
+        flex-wrap: wrap;
+
+    }
+
+    .shopByCat__tile {
+        width: 48%;
+        padding: 5px 0;
+        margin-bottom: 15px;
+    }
+
+    .shopByCat__title {
+        padding: 0 0 10px 0;
+    }
+
+    .shopByCat__image {
+        padding-bottom: 0;
+    }
+
+    .holidayProducts {
+        padding: 20px 0;
+    }
+
+    .holidayProducts__flexWrap {
+        flex-wrap: wrap;
+    }
+
+    .holidayProducts__tile {
+        width: 48%;
+    }
+
+    .holidayProducts__flexWrap {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .holidayProducts__column {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .holidayProducts__save {
+        font-size: 14px;
+    }
+
+    .holidayProducts__column--wilson {
+        display: flex;
+        width: 100%;
+        /* align-items: center; */
+        flex-wrap: wrap;
+        justify-content: center;
+
+    }
+
+    .holidayProducts__column--text--wilson {
+        justify-content: center;
+    }
+
+    .backToTop {
+        width: 45px;
+        height: 45px;
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        background: #fff;
+        z-index: 400;
+        border-radius: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        border: 1px solid #ccc;
+        transition: all .2s ease-in-out;
+        opacity: 0;
+        flex-direction: column;
+    }
+
+    .backToTop i {
+        color: #69b518;
+        font-size: 40px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .holidayProducts__logo {
+        max-width: 150px;
+    }
+
+    .shopByCat__header {
+        font-size: 30px;
+    }
+}
